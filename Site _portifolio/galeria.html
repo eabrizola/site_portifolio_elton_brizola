@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Galeria — Elton Andrade Brizola</title>
+  <meta name="description" content="Galeria de obras de Elton Andrade Brizola: pintura a óleo, xilogravura, bico de pena, quadrinhos e mais." />
+  <meta property="og:title" content="Galeria — Elton Andrade Brizola" />
+  <meta property="og:description" content="Catálogo visual com filtro por técnica, busca por palavra-chave e visualização ampliada." />
+  <meta property="og:type" content="website" />
+  <link rel="icon" type="image/svg+xml" href="imagens/favicon.svg" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="index.html" class="brand">Elton Andrade Brizola</a>
+      <button type="button" class="menu-toggle" aria-label="Abrir menu" aria-expanded="false" data-menu-toggle>☰</button>
+      <nav class="site-nav" data-nav>
+        <a href="index.html">Início</a>
+        <a href="sobre.html">Sobre</a>
+        <a href="galeria.html" class="active">Galeria</a>
+        <a href="contato.html">Contato</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="page-head">
+      <div class="container">
+        <p class="eyebrow">Catálogo de Obras</p>
+        <h1>Galeria</h1>
+        <p class="lead">
+          Filtre por técnica ou busque por título, ano ou tema. Clique em qualquer obra para ampliar.
+        </p>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <div class="gallery-controls" aria-label="Filtros da galeria">
+          <div class="filter-buttons" data-filter-buttons>
+            <button type="button" class="filter-btn active" data-filter="todas">Todas</button>
+            <button type="button" class="filter-btn" data-filter="xilogravura">Xilogravura</button>
+            <button type="button" class="filter-btn" data-filter="bico-de-pena">Bico de Pena</button>
+            <button type="button" class="filter-btn" data-filter="oleo">Pintura a Óleo</button>
+            <button type="button" class="filter-btn" data-filter="quadrinhos">Quadrinhos</button>
+          </div>
+
+          <div class="search-row">
+            <input type="search" class="search-input" placeholder="Buscar por título, técnica ou ano..." aria-label="Buscar obras" data-search-input />
+            <button type="button" class="btn btn-secondary" data-reset-filters>Limpar filtros</button>
+          </div>
+        </div>
+
+        <p class="gallery-status" data-gallery-status></p>
+        <div class="gallery-grid" data-gallery-grid></div>
+      </div>
+    </section>
+  </main>
+
+  <div class="lightbox" data-lightbox aria-hidden="true" role="dialog" aria-modal="true">
+    <div class="lightbox-dialog">
+      <button type="button" class="lightbox-close" aria-label="Fechar ampliação" data-lightbox-close>×</button>
+      <div class="lightbox-media">
+        <img src="" alt="" data-lightbox-img />
+      </div>
+      <div class="lightbox-info">
+        <h2 data-lightbox-title></h2>
+        <p data-lightbox-meta></p>
+        <p data-lightbox-desc></p>
+      </div>
+    </div>
+  </div>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p>© <span data-year>2026</span> Elton Andrade Brizola — Castro / Campos Gerais, PR.</p>
+      <div class="footer-links">
+        <nav class="footer-nav" aria-label="Navegação do rodapé">
+          <a href="index.html">Início</a>
+          <a href="sobre.html">Sobre</a>
+          <a href="galeria.html">Galeria</a>
+          <a href="contato.html">Contato</a>
+        </nav>
+        <div class="footer-social" aria-label="Redes sociais">
+          <a href="https://www.instagram.com/iapoano/" target="_blank" rel="noopener noreferrer">Instagram @iapoano</a>
+          <a href="https://www.facebook.com/iapoano/" target="_blank" rel="noopener noreferrer">Facebook /iapoano</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js" defer></script>
+</body>
+</html>
